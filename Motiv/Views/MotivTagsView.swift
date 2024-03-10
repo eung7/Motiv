@@ -137,7 +137,7 @@ struct MotivTagsView: View {
             }
           } header: {
             Text(sectionItem.title)
-              .fontWeight(.thin)
+              .fontWeight(.semibold)
               .font(.title3)
               .frame(maxWidth: .infinity, alignment: .leading)
               .padding(.top, Metrics.headerTopPadding)

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E544794F2B9D936E0066E855 /* MotivTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544794E2B9D936E0066E855 /* MotivTagsView.swift */; };
+		E54479522B9DE58C0066E855 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54479512B9DE58C0066E855 /* ProfileView.swift */; };
 		E563D54E2B8DCFCA0029A472 /* MotivApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563D54D2B8DCFCA0029A472 /* MotivApp.swift */; };
 		E563D5502B8DCFCA0029A472 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563D54F2B8DCFCA0029A472 /* ExploreView.swift */; };
 		E563D5522B8DCFCB0029A472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E563D5512B8DCFCB0029A472 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		E544794E2B9D936E0066E855 /* MotivTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivTagsView.swift; sourceTree = "<group>"; };
+		E54479512B9DE58C0066E855 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E563D54A2B8DCFCA0029A472 /* Motiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E563D54D2B8DCFCA0029A472 /* MotivApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivApp.swift; sourceTree = "<group>"; };
 		E563D54F2B8DCFCA0029A472 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 				E544794E2B9D936E0066E855 /* MotivTagsView.swift */,
 				E563D54F2B8DCFCA0029A472 /* ExploreView.swift */,
 				E563D5612B8DF0EC0029A472 /* ExploreCardView.swift */,
+				E54479512B9DE58C0066E855 /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				E563D5502B8DCFCA0029A472 /* ExploreView.swift in Sources */,
 				E5EBBF112B9CC2600031AA10 /* QuoteTag.swift in Sources */,
 				E563D5622B8DF0EC0029A472 /* ExploreCardView.swift in Sources */,
+				E54479522B9DE58C0066E855 /* ProfileView.swift in Sources */,
 				E5EBBF0F2B9CB0DA0031AA10 /* Image+.swift in Sources */,
 				E544794F2B9D936E0066E855 /* MotivTagsView.swift in Sources */,
 				E563D54E2B8DCFCA0029A472 /* MotivApp.swift in Sources */,

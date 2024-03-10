@@ -11,45 +11,60 @@ struct ExploreView: View {
   @State private var isPresentedSheet = false
   
   var body: some View {
-    ScrollView(.vertical) {
-      LazyVStack(spacing: 0) {
-        ForEach(Range(1...10)) { _ in
-          ExploreCardView()
-            .frame(maxWidth: .infinity)
-            .containerRelativeFrame(.vertical)
+    NavigationView {
+      ScrollView(.vertical) {
+        LazyVStack(spacing: 0) {
+          ForEach(Range(1...10)) { _ in
+            ExploreCardView()
+              .frame(maxWidth: .infinity)
+              .containerRelativeFrame(.vertical)
+          }
         }
+        .scrollTargetLayout()
       }
-      .scrollTargetLayout()
-    }
-    .ignoresSafeArea(.container, edges: .all)
-    .scrollTargetBehavior(.paging)
-    .scrollIndicators(.hidden)
-    .overlay(alignment: .top) {
-      Button {
-        isPresentedSheet.toggle()
-      } label: {
-        Image.line_3_horizontal_decrease
-          .resizable()
-          .scaledToFit()
-          .frame(width: Metrics.iconSize)
-          .foregroundStyle(.motiv)
+      .ignoresSafeArea(.container, edges: .all)
+      .scrollTargetBehavior(.paging)
+      .scrollIndicators(.hidden)
+      .overlay(alignment: .top) {
+        Group {
+          Button {
+            isPresentedSheet.toggle()
+          } label: {
+            Image.line_3_horizontal_decrease
+              .resizable()
+              .scaledToFit()
+              .frame(width: Metrics.iconSize)
+              .foregroundStyle(.motiv)
+          }
+          .frame(maxWidth: .infinity, alignment: .leading)
+          Text(QuoteTag.all.tagString)
+            .font(.subheadline)
+            .fontWeight(.semibold)
+            .frame(maxWidth: .infinity, alignment: .center)
+            .foregroundStyle(.motiv)
+          NavigationLink {
+            ProfileView()
+          } label: {
+            Image.gear
+              .resizable()
+              .scaledToFit()
+              .frame(width: Metrics.iconSize)
+              .foregroundStyle(.motiv)
+          }
+          .frame(maxWidth: .infinity, alignment: .trailing)
+        }
+        .padding(Metrics.iconPadding)
+        .padding(.top, -8.0)
       }
-      .padding(Metrics.iconPadding)
-      .frame(maxWidth: .infinity, alignment: .leading)
-      Text(QuoteTag.all.tagString)
-        .font(.subheadline)
-        .fontWeight(.semibold)
-        .frame(maxWidth: .infinity, alignment: .center)
-        .foregroundStyle(.motiv)
-    }
-    .onTapGesture(count: 2) {
-      // TODO: 두번 탭 했을 때 좋아요 버튼 누르는 로직
-    }
-    .sheet(isPresented: $isPresentedSheet) {
-      MotivTagsView()
-        .presentationDetents([.height(Metrics.sheetHeight)])
-        .presentationCornerRadius(Metrics.sheetCornerRadius)
-        .presentationDragIndicator(.visible)
+      .onTapGesture(count: 2) {
+        // TODO: 두번 탭 했을 때 좋아요 버튼 누르는 로직
+      }
+      .sheet(isPresented: $isPresentedSheet) {
+        MotivTagsView()
+          .presentationDetents([.height(Metrics.sheetHeight)])
+          .presentationCornerRadius(Metrics.sheetCornerRadius)
+          .presentationDragIndicator(.visible)
+      }
     }
   }
 }
