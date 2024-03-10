@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E544794F2B9D936E0066E855 /* MotivTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544794E2B9D936E0066E855 /* MotivTagsView.swift */; };
 		E563D54E2B8DCFCA0029A472 /* MotivApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563D54D2B8DCFCA0029A472 /* MotivApp.swift */; };
-		E563D5502B8DCFCA0029A472 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563D54F2B8DCFCA0029A472 /* ContentView.swift */; };
+		E563D5502B8DCFCA0029A472 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563D54F2B8DCFCA0029A472 /* ExploreView.swift */; };
 		E563D5522B8DCFCB0029A472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E563D5512B8DCFCB0029A472 /* Assets.xcassets */; };
 		E563D5552B8DCFCB0029A472 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E563D5542B8DCFCB0029A472 /* Preview Assets.xcassets */; };
+		E563D5622B8DF0EC0029A472 /* ExploreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E563D5612B8DF0EC0029A472 /* ExploreCardView.swift */; };
+		E5EBBF0F2B9CB0DA0031AA10 /* Image+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EBBF0E2B9CB0DA0031AA10 /* Image+.swift */; };
+		E5EBBF112B9CC2600031AA10 /* QuoteTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EBBF102B9CC2600031AA10 /* QuoteTag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E544794E2B9D936E0066E855 /* MotivTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivTagsView.swift; sourceTree = "<group>"; };
 		E563D54A2B8DCFCA0029A472 /* Motiv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motiv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E563D54D2B8DCFCA0029A472 /* MotivApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivApp.swift; sourceTree = "<group>"; };
-		E563D54F2B8DCFCA0029A472 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E563D54F2B8DCFCA0029A472 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		E563D5512B8DCFCB0029A472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E563D5542B8DCFCB0029A472 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E563D5612B8DF0EC0029A472 /* ExploreCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardView.swift; sourceTree = "<group>"; };
+		E5EBBF0E2B9CB0DA0031AA10 /* Image+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+.swift"; sourceTree = "<group>"; };
+		E5EBBF102B9CC2600031AA10 /* QuoteTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E54479502B9DB5080066E855 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E563D54D2B8DCFCA0029A472 /* MotivApp.swift */,
+				E544794E2B9D936E0066E855 /* MotivTagsView.swift */,
+				E563D54F2B8DCFCA0029A472 /* ExploreView.swift */,
+				E563D5612B8DF0EC0029A472 /* ExploreCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E563D5412B8DCFCA0029A472 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +70,9 @@
 		E563D54C2B8DCFCA0029A472 /* Motiv */ = {
 			isa = PBXGroup;
 			children = (
-				E563D54D2B8DCFCA0029A472 /* MotivApp.swift */,
-				E563D54F2B8DCFCA0029A472 /* ContentView.swift */,
+				E5EBBF0D2B9CB0D10031AA10 /* Resources */,
+				E5EBBF122B9CC2690031AA10 /* Models */,
+				E54479502B9DB5080066E855 /* Views */,
 				E563D5512B8DCFCB0029A472 /* Assets.xcassets */,
 				E563D5532B8DCFCB0029A472 /* Preview Content */,
 			);
@@ -65,6 +85,22 @@
 				E563D5542B8DCFCB0029A472 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5EBBF0D2B9CB0D10031AA10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E5EBBF0E2B9CB0DA0031AA10 /* Image+.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E5EBBF122B9CC2690031AA10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5EBBF102B9CC2600031AA10 /* QuoteTag.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E563D5502B8DCFCA0029A472 /* ContentView.swift in Sources */,
+				E563D5502B8DCFCA0029A472 /* ExploreView.swift in Sources */,
+				E5EBBF112B9CC2600031AA10 /* QuoteTag.swift in Sources */,
+				E563D5622B8DF0EC0029A472 /* ExploreCardView.swift in Sources */,
+				E5EBBF0F2B9CB0DA0031AA10 /* Image+.swift in Sources */,
+				E544794F2B9D936E0066E855 /* MotivTagsView.swift in Sources */,
 				E563D54E2B8DCFCA0029A472 /* MotivApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
